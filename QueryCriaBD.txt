@@ -1,0 +1,10 @@
+SELECT * FROM todolist.atividades;CREATE TABLE `atividades` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tarefa` varchar(250) NOT NULL,
+  `data_marcada` varchar(45) DEFAULT NULL,
+  `descricao` varchar(5000) DEFAULT NULL,
+  `atividade_feita` varchar(10) DEFAULT NULL,
+  `data_feita` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
