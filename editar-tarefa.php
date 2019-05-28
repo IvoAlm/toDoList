@@ -1,9 +1,12 @@
 <?php include('cabecalho.php');
+
 $id = $_GET["id"];
-$conexao = mysqli_connect("localhost", "root", "", "ToDoList");
-$query = "SELECT * FROM todolist.atividades WHERE id = '$id';";
-$resultado = mysqli_query($conexao,$query);
-$lista = mysqli_fetch_all($resultado);
+
+$leads = new BancoDeDados();
+$leads->where = 'id = '.$id;
+$lista = mysqli_fetch_all($leads->select());
+//tentativa de deixar os valores já escritos
+
 ?>
 <form action="update-tarefa.php?id=".$id>
     <fieldset>
@@ -20,4 +23,5 @@ $lista = mysqli_fetch_all($resultado);
 
 
 <?php
-include('rodape.php');?>
+include('rodape.php');
+;?>

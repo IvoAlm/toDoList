@@ -63,15 +63,7 @@ class BancoDeDados{
        return $resultado;
    }
 }
-
-$teste = new BancoDeDados();
-$testeSelect = $teste->select();
-$resultado = mysqli_fetch_all($testeSelect);
-var_dump($resultado);
-$teste->where = 'id = 8';
-$teste->update();
-$teste->where = 'id = 5';
-$teste->deleta();
+;
 
 
 

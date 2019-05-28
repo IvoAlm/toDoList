@@ -1,5 +1,7 @@
 <?php include('cabecalho.php');
-include('lista-tarefa.php');?>
+$leads = new BancoDeDados();
+$lista = mysqli_fetch_all($leads->select());
+?>
 
 
         <h1>Seja bem vindo!!</h1>
@@ -37,7 +39,6 @@ include('lista-tarefa.php');?>
         <?php
         foreach ($lista as $produto):
             if($produto[5]):?>
-
             <tr>
                 <td><?=$produto[0]?>.</td>
                 <td><?= $produto[1]?></td>
