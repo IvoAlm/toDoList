@@ -1,5 +1,5 @@
 <?php include('cabecalho.php');
-
+require('Classe.php');
 $id = $_GET["id"];
 
 $leads = new BancoDeDados();

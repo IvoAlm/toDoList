@@ -1,5 +1,6 @@
 <?php
 
+
 class BancoDeDados{
 
     var $host = "localhost";
@@ -11,9 +12,9 @@ class BancoDeDados{
     var $dbTable = "todolist.atividades";
     var $columnSelect = "*";
     var $where = "id is not null";
-    var $setUpdate = "tarefa = 'teste', data_marcada = '17/06/1993', descricao = 'mais um teste com orientação objeto'";
+    var $setUpdate = "tarefa = '', data_marcada = '00/00/0000', descricao = ''";
     var $columnInsert = 'tarefa, data_marcada, descricao';
-    var $valuesInsert = "'mais uma', '17/06/1993', 'mais um teste, agora com o insert'";
+    var $valuesInsert = "'insert na tarefa', '17/06/1993', 'insert na descrição'";
 
 
     function __contruct($host = null, $user = null, $password = null, $dataBase = null){

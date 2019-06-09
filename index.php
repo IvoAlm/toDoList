@@ -1,4 +1,6 @@
-<?php include('cabecalho.php');
+<?php
+include('cabecalho.php');
+require('Classe.php');
 $leads = new BancoDeDados();
 $lista = mysqli_fetch_all($leads->select());
 ?>

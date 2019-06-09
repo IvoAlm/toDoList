@@ -1,7 +1,8 @@
 <?php
 include('cabecalho.php');
-$id = $_GET['id'];
+require('Classe.php');
 
+$id = $_GET['id'];
 $leads = new BancoDeDados();
 $leads->where = "id = ".$id;
 $resultado = $leads->deleta();

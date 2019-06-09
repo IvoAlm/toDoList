@@ -1,5 +1,7 @@
 <?php
 include('cabecalho.php');
+require('Classe.php');
+
 $id = $_GET['id'];
 $tarefa = $_GET['tarefa'];
 $data = $_GET['data'];

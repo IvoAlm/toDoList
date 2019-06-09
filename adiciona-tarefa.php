@@ -1,5 +1,6 @@
 <?php
 include('cabecalho.php');
+require('Classe.php');
 $tarefa= $_GET["registro"];
 $data= $_GET["data_marcada"];
 $descricao= $_GET["descricao"];
